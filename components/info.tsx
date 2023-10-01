@@ -1,9 +1,9 @@
 "use client";
 
 import Image from 'next/image';
-
+import { links } from '@/lib/data';
 import { motion } from 'framer-motion';
-
+import Link from 'next/link';
 export default function Info() {
   return (
     <section className="mb-28 max-w-[50rem] text-center sm:mb-0 ">
@@ -42,13 +42,23 @@ export default function Info() {
           </motion.span>
         </div>
       </div>
-      <p className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-3xl">
+      <motion.p className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-3xl"  
+      initial={{ opacity: 0, y:100 }}
+      animate={{ opacity: 1, y:0 }}
+      
+
+      >
         <span className="font-bold">Hello, my name is Enoch Flourish.</span> I'm a{' '}
         <span className="font-bold">Full-stack Web Developer</span> and <span className="font-bold"> Product Designer</span> with{' '}
         <span className="font-bold">a year</span> experience. I enjoy building{' '}
         <span className="italic">sites & apps</span>. My focus is{' '}
         <span className="underline">React (Next.js)</span>.
-      </p>
+      </motion.p>
+
+
+      <div>
+        <Link href = "#contact"></Link>
+      </div>
     </section>
   );
 }
