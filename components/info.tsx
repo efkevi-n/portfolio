@@ -4,6 +4,9 @@ import Image from 'next/image';
 import { links } from '@/lib/data';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { BsArrowRight, BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs"
+import { HiDownload } from "react-icons/hi"
+
 export default function Info() {
   return (
     <section className="mb-28 max-w-[50rem] text-center sm:mb-0 ">
@@ -56,9 +59,30 @@ export default function Info() {
       </motion.p>
 
 
-      <div>
-        <Link href = "#contact"></Link>
-      </div>
+      <motion.div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medim"
+      initial={{ opacity: 0, y:100 }}
+      animate={{ opacity: 1, y:0 }}
+      transition={{ 
+        type:"tween",
+        delay: 0.5,
+       }}
+      >
+        <Link href = "#contact" className="bg-gray-900 group flex items-center gap-2 text-white rounded-full px-7 py-3 outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition "  > Contact Me <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition"/></Link>
+
+        <a className="bg-white flex group items-center gap-2 rounded-full px-7 py-3 outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer shadow border border-black/10" href="/public/CV.pdf" download>Download CV <HiDownload className="opacity-60 group-hover:translate-y-1 transition"/> </a>
+
+       <a className="bg-white flex items-center gap-2 rounded-full p-4 text-gray-700 shadow border border-black/10 focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer hover:text-gray-950 " href="https://www.linkedin.com/in/enochomobolajiflourish/ " target="_blank" >
+       <BsLinkedin  />
+        </a> 
+
+       <a className="bg-white flex items-center gap-2 rounded-full p-4 text-gray-700 shadow border border-black/10 focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer hover:text-gray-950" href="https://github.com/efkevi-n" target="_blank" >
+       <BsGithub />
+        </a> 
+
+       <a  className="bg-white flex items-center gap-2 rounded-full p-4 text-gray-700 shadow border border-black/10 focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer hover:text-gray-950" href="https://twitter.com/efkevin_" target="_blank">
+       <BsTwitter />
+        </a>
+      </motion.div>
     </section>
   );
 }
