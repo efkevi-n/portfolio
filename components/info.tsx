@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { BsArrowRight, BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs"
 import { HiDownload } from "react-icons/hi"
+import kevinImg from "@/public/kevin.png";
 
 export default function Info() {
   return (
@@ -21,10 +22,8 @@ export default function Info() {
             }}
           >
             <Image
-              src="/public/WhatsApp Image 2023-10-01 at 10.17.48 PM (1).jpeg"
+              src={kevinImg}
               alt="Enoch's portrait"
-              width={192}
-              height={192}
               quality={100}
               priority={true}
               className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"

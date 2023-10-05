@@ -1,22 +1,41 @@
-import React from 'react'
-import SectionHeader from './section-header'
-import { projectsData } from '@/lib/data'
+import React from 'react';
+import SectionHeader from './section-header';
+import { projectsData } from '@/lib/data';
+import Image from 'next/image';
 
 export default function Projects() {
   return (
-   <section>
-    <SectionHeader> Projects </SectionHeader>
-    <div>
-      {
-        projectsData.map((project, index)=> (
-            <Project key={index} />
-        ))
-      }
-    </div>
-   </section>
-  )
+    <section>
+      <SectionHeader>Projects</SectionHeader>
+      <div>
+        {projectsData.map((project, index) => (
+          <React.Fragment key={index}>
+            <Project {...project} />
+          </React.Fragment>
+        ))}
+      </div>
+    </section>
+  );
 }
 
-function Project() {
- return <div></div>
+type ProjectProps = typeof projectsData[number];
+
+function Project({
+  title,
+  description,
+  tags,
+  imageUrl,
+}: ProjectProps) {
+  return (
+    <article className=" bg-gray-200 max-w-[42rem] boder border-black/[5] overflow-hidden sm:pr-8 relative">
+      <h3 className="text-2xl font-semibold">{title}</h3>
+      <p className="mt-4 leading-relaxed text-gray-700 ">{description}</p>
+      <ul className="flex flex-wrap mt-4 gap-3"> 
+        {tags.map((tag, index) => (
+          <li className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full " key={index}>{tag}</li>
+        ))}
+      </ul>
+      <Image src={imageUrl} alt="projects" quality={100} className= "absolute"/>
+    </article>
+  );
 }
