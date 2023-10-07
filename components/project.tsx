@@ -1,33 +1,28 @@
-import React from 'react';
-import SectionHeader from './section-header';
-import { projectsData } from '@/lib/data';
-import Image from 'next/image';
+"use cllient"
 
-export default function Projects() {
-  return (
-    <section>
-      <SectionHeader>Projects</SectionHeader>
-      <div>
-        {projectsData.map((project, index) => (
-          <React.Fragment key={index}>
-            <Project {...project} />
-          </React.Fragment>
-        ))}
-      </div>
-    </section>
-  );
-}
+import { projectsData } from "@/lib/data";
+import Image from "next/image";
+import { useScroll } from 'framer-motion';
+import { useRef } from 'react'
+
 
 type ProjectProps = typeof projectsData[number];
 
-function Project({
+export default function Project({
   title,
   description,
   tags,
   imageUrl,
 }: ProjectProps) {
+      const ref = useRef(null);
+      useScroll({
+        target: " ",
+        offset: ["0 1", "1.33 1"]
+      })
+
+
   return (
-    <article className="group bg-gray-200 max-w-[42rem] boder border-black/[5] overflow-hidden sm:pr-8 relative sm:h-[20rem] mb-3 sm:mb-8 last:mb-0 even:pl-8 hover:bg-gray-300 transition">
+    <article ref={ref} className="group bg-gray-200 max-w-[42rem] boder border-black/[5] overflow-hidden sm:pr-8 relative sm:h-[20rem] mb-3 sm:mb-8 last:mb-0 even:pl-8 hover:bg-gray-300 transition">
     <div className="pt-4 pb-8 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full group-even:ml-[18rem]">
     <h3 className="text-2xl font-semibold">{title}</h3>
       <p className="mt-4 leading-relaxed text-gray-700 ">{description}</p>

@@ -2,7 +2,7 @@ import About from "@/components/about";
 
 import Divider from "@/components/divider";
 import Info from "@/components/info";
-import Projects from "@/components/project";
+import Projects from "@/components/projects";
 
 export default function Home() {
   return (
