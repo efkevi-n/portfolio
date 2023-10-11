@@ -36,9 +36,17 @@ export const links = [
 export const experiencesData = [
   {
     title: "Freelance Web Developer",
-    location: "Ankara, Turkey",
+    location: "Lagos, NIgeira",
     description:
       "following six months of study. I was given a freelancing project to start building a real estate development right away.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2022",
+  },
+  {
+    title: "Front-end Web Developer",
+    location: "Monrovia, Liberia",
+    description:
+      "I worked for 8 months as a front-end developer. I was responsible for building the front-end of a web app for a client.",
     icon: React.createElement(LuGraduationCap),
     date: "2022",
   },
@@ -46,13 +54,13 @@ export const experiencesData = [
     title: "Front-End Developer",
     location: "Indiana, USA",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "",
     icon: React.createElement(CgWorkAlt),
     date: "2022- 2023",
   },
   {
     title: "Full-Stack Developer",
-    location: "Indiana, USA",
+    location: "Ankara, Turkey",
     description:
       "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, and MongoDB. I'm open to full-time opportunities.",
     icon: React.createElement(FaReact),
