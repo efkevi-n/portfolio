@@ -30,6 +30,7 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
+    "@types/react-vertical-timeline-component": "^3.3.4",
     "prettier": "3.0.3"
   }
 }
