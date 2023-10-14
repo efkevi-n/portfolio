@@ -10,7 +10,9 @@ import kevinImg from "@/public/kevin.png";
 
 export default function Info() {
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:mb-0 ">
+    <section
+    id='home' 
+    className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem] ">
       <div className="flex items-center justify-center">
         <div className="relative flex">
           <motion.div
