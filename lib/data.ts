@@ -6,6 +6,7 @@ import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 import youtubeImg from "@/public/youtube.png";
+import svelteImg from "@/public/svelte.png";
 
 export const links = [
   {
@@ -76,15 +77,16 @@ export const projectsData = [
       "This was one of my first projects as a developer. It's a Youtube clone built with HTML, CSS, and JavaScript.",
     tags: ["HTML", "CSS", "JavaScript"],
     imageUrl: youtubeImg,
-    Pop: "efkevi-n.github.io/YOUTUBE-CLONE/",
+    Pop: "https://efkevi-n.github.io/YOUTUBE-CLONE/",
+    
   },
   {
-    title: "rmtDev",
+    title: "svelte",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+      "I contributed to the Svelte open-source project, Svelte is a new way to build web app",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
-    Pop: "https://efkevi-n.github.io/YOUTUBE-CLONE/",
+    imageUrl: svelteImg,
+    Pop: "https://github.com/efkevi-n/svelte",
   },
   {
     title: "Word Analytics",
@@ -92,7 +94,8 @@ export const projectsData = [
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg,
-    Pop: "efkevi-n.github.io/YOUTUBE-CLONE/",
+    Pop: "https://efkevi-n.github.io/YOUTUBE-CLONE/",
+   
   },
 ] as const;
 
