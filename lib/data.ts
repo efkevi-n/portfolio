@@ -5,6 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import youtubeImg from "@/public/youtube.png";
 
 export const links = [
   {
@@ -70,11 +71,12 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Youtube Clone",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "This was one of my first projects as a developer. It's a Youtube clone built with HTML, CSS, and JavaScript.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    imageUrl: youtubeImg,
+    Pop: "efkevi-n.github.io/YOUTUBE-CLONE/",
   },
   {
     title: "rmtDev",
@@ -82,6 +84,7 @@ export const projectsData = [
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
     imageUrl: rmtdevImg,
+    Pop: "https://efkevi-n.github.io/YOUTUBE-CLONE/",
   },
   {
     title: "Word Analytics",
@@ -89,6 +92,7 @@ export const projectsData = [
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg,
+    Pop: "efkevi-n.github.io/YOUTUBE-CLONE/",
   },
 ] as const;
 
