@@ -88,15 +88,7 @@ export const projectsData = [
     imageUrl: svelteImg,
     Pop: "https://github.com/efkevi-n/svelte",
   },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
-    Pop: "https://efkevi-n.github.io/YOUTUBE-CLONE/",
-   
-  },
+  
 ] as const;
 
 export const skillsData = [

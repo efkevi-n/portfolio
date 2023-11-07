@@ -23,13 +23,13 @@ export default function Info() {
               duration: 0.25,
             }}
           >
-            <Image
+            {/* <Image
               src={kevinImg}
               alt="Enoch's portrait"
               quality={100}
               priority={true}
               className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
-            />
+            /> */}
           </motion.div>
           <motion.span
             className="absolute bottom-0 right-0 py-10 text-2xl"
@@ -42,7 +42,7 @@ export default function Info() {
               duration: 0.25,
             }}
           >
-            🐥
+            {/* 🐥 */}
           </motion.span>
         </div>
       </div>
