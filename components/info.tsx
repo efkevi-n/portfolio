@@ -7,10 +7,14 @@ import Link from 'next/link';
 import { BsArrowRight, BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs"
 import { HiDownload } from "react-icons/hi"
 import kevinImg from "@/public/kevin.png";
+import { useSectionInView } from '@/lib/hooks';
 
 export default function Info() {
+
+  const { ref } = useSectionInView("Home");
   return (
     <section
+    ref={ref}
     id='home' 
     className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem] ">
       <div className="flex items-center justify-center">
