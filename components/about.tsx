@@ -39,7 +39,7 @@ export default function About() {
   <span className="italic">When I am not coding, I like to read books, watch movies, and play video games.{" "}
   <span className="font-medium">Mark Manson is one of my favorite authors</span>.{" "}
   <span className="font-medium">I also like discovering new stuff</span>.{" "}
-  <span className="italic">'I\'m now studying chess</span>.
+  <span className="italic">I am now studying chess</span>.
   </span>
 </p>
 
