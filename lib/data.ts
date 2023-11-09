@@ -7,6 +7,7 @@ import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 import youtubeImg from "@/public/youtube.png";
 import svelteImg from "@/public/svelte.png";
+import safeerbusinessImg from "@/public/safeer.png";
 
 export const links = [
   {
@@ -87,6 +88,14 @@ export const projectsData = [
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
     imageUrl: svelteImg,
     Pop: "https://github.com/efkevi-n/svelte",
+  },
+  {
+    title: "safeerbusiness",
+    description:
+      "From Vision to Reality: A Dual-Purpose Real Estate and Travel Site",
+    tags: ["laravel", "mysql", "bootstrap", "Redux"],
+    imageUrl: safeerbusinessImg,
+    Pop: "http://www.safeerbusiness.com/",
   },
   
 ] as const;
