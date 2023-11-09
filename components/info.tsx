@@ -15,7 +15,7 @@ export default function Info() {
   return (
     <section
     ref={ref}
-    id='home' 
+    id="home" 
     className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem] ">
       <div className="flex items-center justify-center">
         <div className="relative flex">

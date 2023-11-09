@@ -18,7 +18,7 @@ export default function About() {
   transition={{ 
     delay: 0.2
    }}
-   id='about'
+   id="about"
   >
   <SectionHeader> About Me</SectionHeader>
 
