@@ -56,7 +56,7 @@ export default function Info() {
       
 
       >
-        <span className="font-bold">Hello, my name is Enoch Flourish.</span> 'I\'m a{' '}
+        <span className="font-bold">Hello, my name is Enoch Flourish.</span> I am a{' '}
         <span className="font-bold">Full-stack Web Developer</span> and <span className="font-bold"> Product Designer</span> with{' '}
         <span className="font-bold">a year</span> experience. I enjoy building{' '}
         <span className="italic">sites & apps</span>. My focus is{' '}
