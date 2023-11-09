@@ -29,17 +29,17 @@ export default function About() {
   <span className="italic">The component of programming that involves solving problems is my favorite. I enjoy the satisfaction of solving a difficulty at last.</span>{" "}
   <span className="font-medium">React, Next.js, Node.js, and MongoDB</span>{" "}
   <span className="font-medium">make up my primary stack</span>. I am also{" "}
-  <span className="font-medium">knowledgeable about TypeScript</span>. I'm always{" "}
+  <span className="font-medium">knowledgeable about TypeScript</span>. 'I\'m always{" "}
   <span className="font-medium">trying to keep up with new technology</span>.{" "}
-  <span className="font-medium">I'm a junior software developer</span>{" "}
+  <span className="font-medium">'I\'m a junior software developer</span>{" "}
   <span className="font-medium">seeking for a full-time job</span>{" "}
   <span className="font-medium">right now</span>.
 </p>
 <p>
-  <span className="italic">When I'm not coding, I like to read books, watch movies, and play video games.{" "}
+  <span className="italic">When 'I\'m not coding, I like to read books, watch movies, and play video games.{" "}
   <span className="font-medium">Mark Manson is one of my favorite authors</span>.{" "}
   <span className="font-medium">I also like discovering new stuff</span>.{" "}
-  <span className="italic">I'm now studying chess</span>.
+  <span className="italic">'I\'m now studying chess</span>.
   </span>
 </p>
 
