@@ -8,6 +8,7 @@ import { BsArrowRight, BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs"
 import { HiDownload } from "react-icons/hi"
 import kevinImg from "@/public/kevin.png";
 import { useSectionInView } from '@/lib/hooks';
+import resume from "@/public/Resume.pdf"
 
 export default function Info() {
 
@@ -74,7 +75,7 @@ export default function Info() {
       >
         <Link href = "#contact" className="bg-gray-900 group flex items-center gap-2 text-white rounded-full px-7 py-3 outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition "  > Contact Me <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition"/></Link>
 
-        <a className="bg-white flex group items-center gap-2 rounded-full px-7 py-3 outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer shadow border border-black/10 dark:bg-white/10" href="/public/CV.pdf" download>Download CV <HiDownload className="opacity-60 group-hover:translate-y-1 transition"/> </a>
+        <a className="bg-white flex group items-center gap-2 rounded-full px-7 py-3 outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer shadow border border-black/10 dark:bg-white/10" href="/public/Resume.pdf" download>Download CV <HiDownload className="opacity-60 group-hover:translate-y-1 transition"/> </a>
 
        <a className="bg-white flex items-center gap-2 rounded-full p-4 text-gray-700 shadow border border-black/10 focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer hover:text-gray-950 dark:bg-white/10 dark:text-white/60 " href="https://www.linkedin.com/in/enochomobolajiflourish/ " target="_blank" >
        <BsLinkedin  />
