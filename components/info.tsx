@@ -8,7 +8,7 @@ import { BsArrowRight, BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs"
 import { HiDownload } from "react-icons/hi"
 import kevinImg from "@/public/kevin.png";
 import { useSectionInView } from '@/lib/hooks';
-import resume from "@/public/Resume.pdf"
+
 
 export default function Info() {
 
