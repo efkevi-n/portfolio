@@ -61,7 +61,7 @@ export default function Info() {
         <span className="font-bold">Full-stack Web Developer</span> and <span className="font-bold"> Product Designer</span> with{' '}
         <span className="font-bold">a year</span> experience. I enjoy building{' '}
         <span className="italic">sites & apps</span>. My focus is{' '}
-        <span className="underline">React (Next.js)</span>.
+        <span className="underline">React (Next.js) and WEBFLOW</span>.
       </motion.p>
 
 
