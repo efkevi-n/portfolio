@@ -8,6 +8,7 @@ import wordanalyticsImg from "@/public/wordanalytics.png";
 import youtubeImg from "@/public/youtube.png";
 import svelteImg from "@/public/svelte.png";
 import safeerbusinessImg from "@/public/safeer.png";
+import kraftImg from "@/public/kraft.png";
 
 export const links = [
   {
@@ -97,6 +98,15 @@ export const projectsData = [
     imageUrl: safeerbusinessImg,
     Pop: "http://www.safeerbusiness.com/",
   },
+  {
+    title: "Kraft",
+    description:
+      "Kraft is an online store built with Django and Tailwind CSS.",
+    tags: ["html", "Django", "Python", "Tailwind", "Css"],
+    imageUrl: kraftImg,
+    Pop: "https://github.com/efkevi-n/Kraft---website-with-django--/tree/main/puddle",
+  },
+  
   
 ] as const;
 
