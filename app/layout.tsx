@@ -10,7 +10,7 @@ import { Toaster } from 'react-hot-toast'
 
 export const metadata = {
   title: 'Enochs | Portfolio',
-  description: 'Enoch is a full-stack web developer with a year experience.',
+  description: 'Enoch is a full-stack web developer with over 3 years experience.',
 }
 
 export default function RootLayout({
