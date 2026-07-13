@@ -2,13 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
-import youtubeImg from "@/public/youtube.png";
-import svelteImg from "@/public/svelte.png";
-import safeerbusinessImg from "@/public/safeer.png";
-import kraftImg from "@/public/kraft.png";
+import salesagentImg from "@/public/salesagent.png";
+import ItineraryImg from "@/public/itine.png";
 
 export const links = [
   {
@@ -20,6 +16,10 @@ export const links = [
     hash: "#about",
   },
   {
+    name: "Experience",
+    hash: "#experience",
+  },
+  {
     name: "Projects",
     hash: "#projects",
   },
@@ -27,10 +27,6 @@ export const links = [
     name: "Skills",
     hash: "#skills",
   },
-  // {
-  //   name: "Experience",
-  //   hash: "#experience",
-  // },
   {
     name: "Contact",
     hash: "#contact",
@@ -39,75 +35,73 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Freelance Web Developer",
-    location: "Lagos, NIgeira",
+    title: "Software Developer — Kodakit",
+    location: "Remote",
     description:
-      "following six months of study. I was given a freelancing project to start building a real estate development right away.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2022",
-  },
-  {
-    title: "Front-end Web Developer",
-    location: "Monrovia, Liberia",
-    description:
-      "I worked for 8 months as a front-end developer. I was responsible for building the front-end of a web app for a client.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2022",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Indiana, USA",
-    description:
-      "",
+      "Built and deployed a data analytics site using Next.js, TypeScript, and Framer Motion. Customized Odoo 16 modules for e-commerce and POS systems.",
     icon: React.createElement(CgWorkAlt),
-    date: "2022- 2023",
+    date: "2024 - 2025",
   },
   {
-    title: "Full-Stack Developer",
+    title: "Frontend + Backend Developer — Insightseller",
     location: "Ankara, Turkey",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, and MongoDB. I'm open to full-time opportunities.",
+      "Built responsive web apps with Angular and Node.js. Optimized PostgreSQL queries and implemented secure backend endpoints.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2022 - 2024",
+  },
+  {
+    title: "Erasmus+ Exchange — Instituto Politécnico de Santarém",
+    location: "Portugal",
+    description:
+      "Exchange semester; coursework in emerging technologies, finance, and data-driven decision-making.",
+    icon: React.createElement(LuGraduationCap),
+    date: "Autumn 2025",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "Youtube Clone",
+    title: "AI-Powered Budget Travel Planner",
     description:
-      "This was one of my first projects as a developer. It's a Youtube clone built with HTML, CSS, and JavaScript.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    imageUrl: youtubeImg,
-    Pop: "https://efkevi-n.github.io/YOUTUBE-CLONE/",
-    
+      "A full-stack travel planning app with AI-driven budget recommendations. Built for my graduation project, leading a team of four.",
+    tags: [
+      "NestJS",
+      "React Native",
+      "PostgreSQL",
+      "Redis",
+      "Railway",
+      "Cloudinary",
+      "SendGrid",
+      "JWT",
+      "Offline mode",
+    ],
+    imageUrl: ItineraryImg,
+    Pop: "https://github.com/efkevi-n/Itine",
   },
   {
-    title: "svelte",
+    title: "SubTrack — Subscription Tracker",
     description:
-      "I contributed to the Svelte open-source project, Svelte is a new way to build web app",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: svelteImg,
-    Pop: "https://github.com/efkevi-n/svelte",
+      "A mobile app to track personal subscriptions, available on the Google Play Store.",
+    tags: [
+      "React Native",
+      "Expo",
+      "Firebase",
+      "Auth",
+      "Firestore sync",
+      "Push notifications",
+    ],
+    imageUrl: rmtdevImg,
+    Pop: "URL_TBD",
   },
   {
-    title: "safeerbusiness",
+    title: "Autonomous AI Sales Agent",
     description:
-      "From Vision to Reality: A Dual-Purpose Real Estate and Travel Site",
-    tags: ["laravel", "mysql", "bootstrap", "Redux"],
-    imageUrl: safeerbusinessImg,
-    Pop: "http://www.safeerbusiness.com/",
+      "An autonomous sales agent that negotiates car listings using OpenAI function calling over a SQLite dataset — built to explore agentic workflows end to end.",
+    tags: ["OpenAI API", "Function Calling", "Python", "SQLite", "Agents"],
+    imageUrl: salesagentImg,
+    Pop: "https://github.com/efkevi-n/autonomous-sales-agent-wex427", // TODO: confirm exact repo URL
   },
-  {
-    title: "Kraft",
-    description:
-      "Kraft is an online store built with Django and Tailwind CSS.",
-    tags: ["html", "Django", "Python", "Tailwind", "Css"],
-    imageUrl: kraftImg,
-    Pop: "https://github.com/efkevi-n/Kraft---website-with-django--/tree/main/puddle",
-  },
-  
-  
 ] as const;
 
 export const skillsData = [
@@ -117,15 +111,24 @@ export const skillsData = [
   "TypeScript",
   "React",
   "Next.js",
-  "Node.js",
-  "wordpress",
-  "Git",
+  "React Native",
+  "Expo",
   "Tailwind",
-  "MongoDB",
-  "Redux",
-  "Apollo",
+  "Framer Motion",
+  "Node.js",
+  "NestJS",
   "Express",
   "Python",
   "Django",
-  "Framer Motion",
+  "PostgreSQL",
+  "Firebase",
+  "Redis",
+  "Prisma",
+  "Cloudinary",
+  "Git",
+  "Docker",
+  "Railway",
+  "REST APIs",
+  "JWT Auth",
+  "Agile/SCRUM",
 ] as const;
