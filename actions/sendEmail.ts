@@ -32,7 +32,7 @@ export const sendEmail = async (formData: FormData) => {
   const toEmail = process.env.CONTACT_EMAIL ?? "efkevin@icloud.com";
 
   try {
-    const { data, error } = await resend.emails.send({
+    const data = await resend.emails.send({
       from: "Contact Form <onboarding@resend.dev>",
       to: toEmail,
       subject: "Message from contact form",
@@ -42,12 +42,6 @@ export const sendEmail = async (formData: FormData) => {
         senderEmail: senderEmail,
       }),
     });
-
-    if (error) {
-      return {
-        error: error.message,
-      };
-    }
 
     return {
       data,
