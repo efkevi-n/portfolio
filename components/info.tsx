@@ -93,6 +93,7 @@ export default function Info() {
           className="bg-white flex items-center gap-2 rounded-full p-4 text-gray-700 shadow border border-black/10 focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer hover:text-gray-950 dark:bg-white/10 dark:text-white/60 "
           href="https://www.linkedin.com/in/enochomobolajiflourish/"
           target="_blank"
+          aria-label="LinkedIn profile"
         >
           <BsLinkedin />
         </a>
@@ -101,6 +102,7 @@ export default function Info() {
           className="bg-white flex items-center gap-2 rounded-full p-4 text-gray-700 shadow border border-black/10 focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer hover:text-gray-950  dark:bg-white/10 dark:text-white/60  "
           href="https://github.com/efkevi-n"
           target="_blank"
+          aria-label="GitHub profile"
         >
           <BsGithub />
         </a>
@@ -109,6 +111,7 @@ export default function Info() {
           className="bg-white flex items-center gap-2 rounded-full p-4 text-gray-700 shadow border border-black/10 focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer hover:text-gray-950 dark:bg-white/10 dark:text-white/60 "
           href="https://twitter.com/efbolaji"
           target="_blank"
+          aria-label="Twitter profile"
         >
           <BsTwitter />
         </a>
