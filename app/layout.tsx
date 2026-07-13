@@ -1,5 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import type { Metadata } from 'next'
 import Header from '@/components/header'
 const inter = Inter({ subsets: ['latin'] })
 import ActiveSectionContextProvider from '@/context/active-section-context'
@@ -8,9 +9,27 @@ import ThemeSwitch from '@/components/theme-switch'
 import ThemeContextProvider from '@/context/theme-content'
 import { Toaster } from 'react-hot-toast'
 
-export const metadata = {
-  title: 'Enochs | Portfolio',
-  description: 'Enoch is a full-stack web developer with over 3 years experience.',
+const title = 'Enochs | Portfolio'
+const description = 'Enoch is a full-stack developer with 3+ years experience.'
+
+export const metadata: Metadata = {
+  metadataBase: new URL('https://efkevin.vercel.app'),
+  title,
+  description,
+  openGraph: {
+    title,
+    description,
+    url: 'https://efkevin.vercel.app',
+    siteName: 'Enoch Flourish — Portfolio',
+    type: 'website',
+    images: [{ url: '/og.png', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title,
+    description,
+    images: ['/og.png'],
+  },
 }
 
 export default function RootLayout({

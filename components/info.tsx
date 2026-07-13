@@ -56,11 +56,10 @@ export default function Info() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, my name is Enoch Flourish.</span> I
-        am a <span className="font-bold">Full-stack Web Developer</span> and{" "}
-        <span className="font-bold"> Product Designer</span> with{" "}
-        <span className="font-bold">a year</span> experience. I enjoy building{" "}
-        <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js) and WEBFLOW</span>.
+        am a <span className="font-bold">Full-Stack Developer</span> with{" "}
+        <span className="font-bold">3+ years</span> experience. I enjoy building{" "}
+        <span className="italic">sites & apps</span> —{" "}
+        <span className="underline">clean, scalable products</span>.
       </motion.p>
 
       <motion.div
@@ -92,8 +91,9 @@ export default function Info() {
 
         <a
           className="bg-white flex items-center gap-2 rounded-full p-4 text-gray-700 shadow border border-black/10 focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer hover:text-gray-950 dark:bg-white/10 dark:text-white/60 "
-          href="https://www.linkedin.com/in/enochomobolajiflourish/ "
+          href="https://www.linkedin.com/in/enochomobolajiflourish/"
           target="_blank"
+          aria-label="LinkedIn profile"
         >
           <BsLinkedin />
         </a>
@@ -102,14 +102,16 @@ export default function Info() {
           className="bg-white flex items-center gap-2 rounded-full p-4 text-gray-700 shadow border border-black/10 focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer hover:text-gray-950  dark:bg-white/10 dark:text-white/60  "
           href="https://github.com/efkevi-n"
           target="_blank"
+          aria-label="GitHub profile"
         >
           <BsGithub />
         </a>
 
         <a
           className="bg-white flex items-center gap-2 rounded-full p-4 text-gray-700 shadow border border-black/10 focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer hover:text-gray-950 dark:bg-white/10 dark:text-white/60 "
-          href="https://twitter.com/efkevin_"
+          href="https://twitter.com/efbolaji"
           target="_blank"
+          aria-label="Twitter profile"
         >
           <BsTwitter />
         </a>

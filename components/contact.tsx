@@ -33,8 +33,8 @@ export default function Contact() {
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at{" "}
-        <a className="underline" href="mailto:flourzeez@gmail.com">
-          flourzeez@gmail.com
+        <a className="underline" href="mailto:efkevin@icloud.com">
+          efkevin@icloud.com
         </a>{" "}
         or through this form.
       </p>
@@ -52,16 +52,24 @@ export default function Contact() {
           toast.success("Email sent successfully!");
         }}
       >
+        <label htmlFor="senderEmail" className="sr-only">
+          Your email
+        </label>
         <input
           className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          id="senderEmail"
           name="senderEmail"
           type="email"
           required
           maxLength={500}
           placeholder="Your email"
         />
+        <label htmlFor="message" className="sr-only">
+          Your message
+        </label>
         <textarea
           className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          id="message"
           name="message"
           placeholder="Your message"
           required
