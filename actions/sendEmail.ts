@@ -11,6 +11,12 @@ export const sendEmail = async (formData: FormData) => {
   const senderEmail = formData.get("senderEmail");
   const message = formData.get("message");
 
+  if (!process.env.RESEND_API_KEY) {
+    return {
+      error: "Email service is not configured",
+    };
+  }
+
   // simple server-side validation
   if (!validateString(senderEmail, 500)) {
     return {
@@ -23,11 +29,12 @@ export const sendEmail = async (formData: FormData) => {
     };
   }
 
-  let data;
+  const toEmail = process.env.CONTACT_EMAIL ?? "efkevin@icloud.com";
+
   try {
-    data = await resend.emails.send({
+    const { data, error } = await resend.emails.send({
       from: "Contact Form <onboarding@resend.dev>",
-      to: "flourzeez@gmail.com",
+      to: toEmail,
       subject: "Message from contact form",
       reply_to: senderEmail,
       react: React.createElement(ContactFormEmail, {
@@ -35,13 +42,19 @@ export const sendEmail = async (formData: FormData) => {
         senderEmail: senderEmail,
       }),
     });
+
+    if (error) {
+      return {
+        error: error.message,
+      };
+    }
+
+    return {
+      data,
+    };
   } catch (error: unknown) {
     return {
       error: getErrorMessage(error),
     };
   }
-
-  return {
-    data,
-  };
 };
