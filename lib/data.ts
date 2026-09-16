@@ -92,7 +92,7 @@ export const projectsData = [
       "Push notifications",
     ],
     imageUrl: rmtdevImg,
-    Pop: "URL_TBD",
+    Pop: "https://play.google.com/store/apps/details?id=com.subtrack.efbolaji&pcampaignid=web_share",
   },
   {
     title: "Autonomous AI Sales Agent",
